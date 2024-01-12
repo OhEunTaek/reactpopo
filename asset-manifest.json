@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/reactpopo/static/css/main.da749a86.css",
+    "main.js": "/reactpopo/static/js/main.4b5afb89.js",
+    "index.html": "/reactpopo/index.html",
+    "main.da749a86.css.map": "/reactpopo/static/css/main.da749a86.css.map",
+    "main.4b5afb89.js.map": "/reactpopo/static/js/main.4b5afb89.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.da749a86.css",
+    "static/js/main.4b5afb89.js"
+  ]
+}
