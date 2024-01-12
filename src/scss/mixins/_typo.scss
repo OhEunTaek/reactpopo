@@ -1,0 +1,13 @@
+@mixin font($fs: 14px, $lh: 1) {
+  font-size: $fs;
+  line-height: $lh;
+}
+
+@mixin line($line: 2) {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+}

@@ -1,0 +1,74 @@
+$fieldset-gap: 80px;
+$legend: 180px;
+$lable: 150px;
+
+.members {
+  .content {
+    margin-bottom: 150px;
+  }
+
+  .sub-top {
+    width: 100%;
+    height: 300px;
+    background-image: url('https://images.ctfassets.net/kq1hxg0iw5cx/685lVkTCsj48XqMNKvz1xz/0ecfabef4490b67bfa82d9f9bcbce4db/Hero_Illustration.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-color: #0052cc;
+  }
+
+  .member-form {
+    padding: 32px;
+
+    fieldset {
+      display: flex;
+      align-items: baseline;
+      width: 100%;
+      gap: $fieldset-gap;
+
+      legend {
+        float: left;
+        width: $legend;
+        @include font(17px, 1.5);
+        flex-shrink: 0;
+      }
+
+      .input-list {
+        .input-item {
+          label,
+          .label {
+            width: $lable;
+          }
+        }
+
+        .err-msg {
+          margin-left: $lable + $input-item-gap;
+        }
+      }
+    }
+
+    .required-box {
+      margin-bottom: 80px;
+    }
+
+    .option-box {
+      margin-bottom: 40px;
+
+      .input-list {
+        .input-item:nth-of-type(1) {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    button[type='submit'] {
+      cursor: pointer;
+      margin-left: $legend + $fieldset-gap;
+      margin-top: 40px;
+      background-color: #000;
+      color: #fff;
+      width: 240px;
+      height: 64px;
+      border-radius: 4px;
+    }
+  }
+}

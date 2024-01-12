@@ -1,0 +1,31 @@
+footer {
+  padding: 28px 32px;
+  border-top: 1px solid $line-gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  ul {
+    display: flex;
+    @include font(11px);
+    color: #777;
+    column-gap: 24px;
+  }
+
+  .footer-form {
+    .icon-globe {
+      @include font(12px);
+      margin-right: 4px;
+    }
+
+    select {
+      @include font(12px);
+    }
+  }
+
+  &.fixed {
+    position: fixed;
+    bottom: 0;
+    width: calc(100vw - ($nav-width + $subtitle-width));
+  }
+}

@@ -1,0 +1,11 @@
+@mixin hover-line {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.2s;
+}

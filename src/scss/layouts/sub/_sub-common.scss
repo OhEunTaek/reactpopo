@@ -1,0 +1,142 @@
+$input-item-gap: 16px;
+
+.container {
+  display: flex;
+  flex-grow: 1;
+  transition: 0.3s;
+
+  &.on {
+    .title-box {
+      left: $nav-width;
+    }
+
+    .content-wrap {
+      width: 100%;
+      left: 0;
+    }
+  }
+
+  .title-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-right: 1px solid $line-gray;
+    @include glass;
+    padding: 30px;
+    width: 300px;
+    height: 100vh;
+    flex-shrink: 0;
+    z-index: $sut-title-levle;
+    transition: 0.5s;
+
+    h1 {
+      text-transform: capitalize;
+      @include font(14px);
+      font-weight: 600;
+      margin-bottom: 64px;
+      color: $blue;
+    }
+
+    .sub-title {
+      position: relative;
+
+      h2 {
+        @include font(36px, 1.2);
+        margin-bottom: 40px;
+        font-weight: 300;
+      }
+    }
+
+    p {
+      @include font(13px, 1.6);
+      font-weight: 300;
+    }
+
+    .badge-num {
+      @include font(14px, 20px);
+      position: absolute;
+      top: -6px;
+      right: 17px;
+    }
+  }
+
+  .content-wrap {
+    position: relative;
+    top: 0;
+    left: -100%;
+    margin-left: $nav-width + $subtitle-width;
+    transition: 0.8s 0.4s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+  }
+}
+
+.input-list {
+  flex-grow: 1;
+
+  .input-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    column-gap: $input-item-gap;
+    // row-gap: 10px;
+    margin-bottom: 24px;
+
+    label,
+    .label {
+      @include font(13px, 1.4);
+      font-weight: 500;
+      width: 100%;
+      color: #777;
+      white-space: nowrap;
+      text-transform: capitalize;
+    }
+
+    input:not([type='checkbox']),
+    select {
+      @include font(13px);
+      font-weight: 200;
+      flex-grow: 1;
+      border-bottom: 1px solid $line-gray;
+      padding: 10px 0;
+    }
+
+    input:focus-within {
+      border-bottom: 1px solid #777;
+    }
+
+    .checkbox-group {
+      flex-grow: 1;
+      margin-top: 16px;
+
+      .checkbox {
+        width: 100%;
+        border-bottom: 1px solid $line-gray;
+        padding: 18px 12px 18px 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        input[type='checkbox'] {
+          width: 16px;
+          height: 16px;
+        }
+
+        label {
+          @include font(13px);
+          font-weight: 200;
+          margin-left: 10px;
+          text-transform: none;
+        }
+      }
+    }
+  }
+
+  .err-msg {
+    @include font(13px);
+    color: red;
+    width: 100%;
+  }
+}

@@ -1,0 +1,204 @@
+.community {
+  .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .board-input {
+    padding: 56px 32px;
+    border-right: 1px solid $line-gray;
+    height: 100vh;
+
+    &-top {
+      width: 100%;
+      margin-bottom: 64px;
+
+      .title {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        h1 {
+          @include font(28px);
+          font-weight: 300;
+          margin-bottom: 24px;
+        }
+
+        .today {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .day {
+            display: inline-block;
+            @include font(12px, 42px);
+            width: 42px;
+            border-radius: 50%;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 6px;
+            letter-spacing: 2px;
+          }
+
+          .month {
+            @include font(10px);
+            font-weight: 500;
+          }
+        }
+      }
+
+      .time {
+        @include font(10px);
+        font-weight: 400;
+        color: #777;
+        letter-spacing: 1px;
+
+        .fa-clock {
+          margin-right: 3px;
+        }
+      }
+    }
+
+    .input-list {
+      .input-item {
+        input {
+          width: 100%;
+          border: 1px solid $line-gray;
+          border-radius: 4px;
+          padding: 12px 20px;
+          margin-bottom: 12px;
+        }
+
+        textarea {
+          width: 100%;
+          min-height: 200px;
+          @include font(13px);
+          font-weight: 200;
+          border: 1px solid $line-gray;
+          border-radius: 4px;
+          padding: 14px 20px;
+        }
+      }
+    }
+
+    .btns-community-input {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+
+      button {
+        width: 100%;
+        background-color: $blue;
+        color: #fff;
+        height: 56px;
+        border-radius: 4px;
+        transition: 0.2s;
+
+        &:nth-of-type(1) {
+          background-color: #f6f6f6;
+          color: #000;
+        }
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .board-ouput {
+    padding: 32px;
+
+    .board-list {
+      .board-item {
+        border-bottom: 1px solid $line-gray;
+        padding-bottom: 12px;
+        position: relative;
+        margin-bottom: 20px;
+
+        h2 {
+          @include font(14px);
+          margin-bottom: 4px;
+          padding-right: 48px;
+        }
+
+        p {
+          @include font(14px, 1.5);
+          color: #777;
+          font-weight: 300;
+          padding-right: 48px;
+        }
+
+        .btns-community-ouput {
+          position: absolute;
+          right: 0;
+          top: 0;
+
+          button {
+            color: #777;
+            cursor: pointer;
+            transition: 0.2s;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            @include font(13px, 28px);
+            text-align: center;
+
+            &:hover {
+              &:nth-of-type(1) {
+                background-color: #f6f6f6;
+                color: #000;
+              }
+
+              &:nth-of-type(2) {
+                background-color: rgba($color: #ff4800, $alpha: 0.1);
+                color: #ff4800;
+              }
+            }
+          }
+        }
+      }
+
+      .input-edit-list {
+        padding-right: 56px;
+        position: relative;
+
+        input {
+          margin-bottom: 4px;
+        }
+
+        input,
+        textarea {
+          width: 100%;
+          border: 1px solid $line-gray;
+          border-radius: 4px;
+          font-weight: 300;
+          padding: 4px 8px;
+          @include font(13px, 1.5);
+        }
+
+        .btns-edit {
+          position: absolute;
+          right: 0;
+          top: 0;
+
+          button {
+            @include font(19px);
+            color: $blue;
+            transition: 0.2;
+
+            &:nth-of-type(1) {
+              margin-right: 6px;
+              color: #999;
+            }
+
+            &:hover {
+              filter: contrast(1.5);
+            }
+          }
+        }
+      }
+    }
+  }
+}

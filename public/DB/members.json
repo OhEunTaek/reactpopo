@@ -1,0 +1,40 @@
+{
+  "members": [
+    {
+      "name": "Julia",
+      "position": "President",
+      "img": "member1.jpg",
+      "comment": "'Trello is an online tool for managing projects and personal tasks. That may sound rather prosaic. But this increasingly popular app often inspires the sort of passion usually reserved for consumer apps like Pinterest or Instagram. It’s the kind of business software that slips into businesses through the backdoor, just because individual employees like how it works.'"
+    },
+    {
+      "name": "David",
+      "position": "Vice President",
+      "img": "member2.jpg",
+      "comment": "'“It reminds us of the early traction that Dropbox…and other apps up there had that have grabbed individuals and caused them to start using it and bring it to work and convince teams and colleagues to use it and it’s gradually taken over organizations,” said Index Partner Neil Rimer'"
+    },
+    {
+      "name": "Emily",
+      "position": "UI Designer",
+      "img": "member3.jpg",
+      "comment": "The visual organizing software has amassed some 4.6 million registered users — now with one million monthly actives — turning their projects, whether household to-do lists or corporate realignment plans, into visual boards using its cloud-based software."
+    },
+    {
+      "name": "Paul",
+      "position": "Front-end Engineer",
+      "img": "member4.jpg",
+      "comment": "I’ve been using it for five months now without fail, synthesizing everything from Covey and Allen that stuck, along with Carson and Babauta’s wisdom, to create the only task management system that’s ever really worked for me."
+    },
+    {
+      "name": "Sara",
+      "position": "Back-end Engineer",
+      "img": "member5.jpg",
+      "comment": "Confluence became the single-source of truth for client facing teams and helped them deliver on promises to the customer."
+    },
+    {
+      "name": "Michael",
+      "position": "Project Manager",
+      "img": "member6.jpg",
+      "comment": "With Atlassian, it’s easy to get started and spin up a solution. I also loved the idea of having a self-serve app marketplace."
+    }
+  ]
+}
